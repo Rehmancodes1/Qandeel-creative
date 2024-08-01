@@ -1,0 +1,304 @@
+
+
+
+
+
+@media screen and (max-width:1170px) {
+
+    #about .inner {
+        justify-content: center;
+    }
+
+    #home .main-heading .designer h1 {
+        margin-left: 200px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1000px) {
+
+    #about .about-me .para {
+        padding: 0 40px;
+    }
+
+    #home .main-heading .designer h1 {
+        margin-left: 170px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+
+    #about .about-me .para {
+        padding: 0 30px;
+        margin-top: 50px;
+    }
+
+    #about .about-me img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #about .about-me .para p {
+        font-size: 15px;
+        line-height: 1.6;
+        width: 430px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    #home .main-heading .designer h1 {
+        margin-left: 150px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    #home .available {
+        padding-right: 20px;
+    }
+
+    #home .working {
+        padding: 0 20px;
+    }
+
+    .projects-heading {
+        padding: 6vw 10vw 6vw 20px;
+    }
+
+    #about .working {
+        padding: 0 20px;
+    }
+
+    .footer {
+        padding: 0 20px;
+    }
+
+    #home .main-heading>h1 {
+        padding: 0 20px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:780px) {
+    #about .about-me .para p {
+        width: 350px;
+    }
+
+    .footer .copyrights {
+        font-size: 14px;
+        display: none;
+    }
+
+    .copy {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .footer .links {
+        gap: 10vw;
+        justify-content: center;
+        flex: 1;
+    }
+
+    #about {
+        justify-content: none;
+        gap: 40px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    #about .inner {
+        height: auto;
+    }
+
+    #about .about-me {
+        flex-direction: column;
+    }
+
+    #about .about-me img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #about .about-me .para p {
+        width: auto;
+    }
+
+
+    #about .about-me .para {
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    #about {
+        justify-content: flex-start;
+        padding-top: 10vw;
+        height: auto;
+    }
+
+    #about .inner {
+        padding: 0 20px;
+    }
+
+    #about .about-me {
+        align-items: flex-start;
+    }
+
+    #home .main-heading .designer h1 {
+        margin-left: 16vw;
+        font-size: 15vw;
+    }
+
+    #home .main-heading h1 {
+        font-size: 15vw;
+    }
+
+    #home .available h4 {
+        font-size: 0.9rem;
+    }
+
+    nav .menu {
+        display: flex;
+    }
+
+    nav .heading {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:520px) {
+    .footer .links {
+        gap: 0;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .projects-heading .elem {
+        padding-left: 20px;
+    }
+
+    .projects-heading .elem h1 {
+        font-size: 12vw;
+    }
+
+    .projects-heading .elem h5 {
+        font-size: 12px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .projects-heading .elem {
+        padding-left: 0px;
+    }
+
+    #cursor {
+        display: none;
+    }
+
+    .projects-heading .elem img {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+    .footer .links a {
+        font-size: 0.9rem;
+    }
+
+    #home .working .arrow {
+        display: none;
+    }
+
+    #home .working {
+        bottom: 80px;
+    }
+
+    .projects-heading {
+        padding: 0vw 10vw 10vw 20px;
+    }
+
+    #about .about-me img {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #home .main-heading .designer h4 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:370px) {
+    .footer .links a {
+        font-size: 0.8rem;
+    }
+
+    #home .working h4 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:350px) {
+
+    #home .working h4 {
+        font-size: 14px;
+    }
+
+    #about .working h4 a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+}
