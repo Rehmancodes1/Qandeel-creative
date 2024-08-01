@@ -341,15 +341,15 @@ const hoverimg3 = () => {
 
 }
 hoverimg3()
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-echo "# Qandeel-creative" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Rehmancodes1/Qandeel-creative.git
-git push -u origin main
+// git config --global user.name "Your Name"
+// git config --global user.email "your.email@example.com"
+// echo "# Qandeel-creative" >> README.md
+// git init
+// git add README.md
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin https://github.com/Rehmancodes1/Qandeel-creative.git
+// git push -u origin main
 
 
 
