@@ -2,17 +2,22 @@ lucide.createIcons();
 
 
 
-function openInNewTab(url) {
-    window.open(url, '_blank');
-}
-
-
 //to smooth scrolling
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
 
+
+
+const menu = document.getElementById('menu');
+
+const openMenu = () => {
+    menu.style.top = "0vh";
+}
+const closeMenu = () => {
+    menu.style.top = "-100vh";
+}
 
 
 
@@ -68,7 +73,24 @@ hover.forEach((elem) => {
 })
 
 
+let cursorImg = document.querySelector('#cursor img');
+let view = document.querySelectorAll('.view');
 
+view.forEach((elem) => {
+    elem.addEventListener('mouseover', () => {
+        cursor.style.border = '1px solid white';
+        cursor.style.backgroundColor = 'transparent';
+        // cursorImg.style.display = 'block';
+        cursorImg.style.opacity = '0.9'; 
+    });
+
+    elem.addEventListener('mouseout', () => {
+        cursor.style.border = '0';
+        cursor.style.backgroundColor = '#fff';
+        // cursorImg.style.display = 'none';
+        cursorImg.style.opacity = '0'; // 
+    });
+});
 
 
 
@@ -337,6 +359,7 @@ const hoverimg3 = () => {
             top:0
 
         })
+        
     })
 
 }
@@ -352,18 +375,3 @@ hoverimg3()
 // git push -u origin main
 
 
-
-
-
-
-
-////to add click function in menu button----------------------------
-
-const menu = document.getElementById('menu');
-
-const openMenu = () => {
-    menu.style.top = "0vh";
-}
-const closeMenu = () => {
-    menu.style.top = "-100vh";
-}

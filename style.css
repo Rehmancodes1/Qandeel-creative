@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: heading;
+    src: url(../Fonts/Phudu-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(../Fonts/Phudu-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: body;
 }
 
 html,
@@ -34,8 +45,20 @@ html::-webkit-scrollbar {
     pointer-events: none;
     /* transition: scale 0.4s, border 0.4s, background 0.4s; */
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+#cursor img{
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    /* display: none; */
+    opacity: 0;
+    transition: 0.2s ease-in-out; /* Smooth fade-in */
+}
 #home {
     height: 100vh;
     width: 100%;
@@ -115,7 +138,7 @@ nav .heading a::after {
     height: 1px;
     left: 0;
     width: 0%;
-    bottom: 7px;
+    bottom: 4px;
     transition: all 0.3s;
 }
 
@@ -191,12 +214,13 @@ nav .heading a:hover::after {
 }
 
 #home .main-heading>h1 {
-    font-size: 10vw;
+    font-size: 13vw;
     font-weight: 500;
     color: #A3A3A3;
     line-height: 0.8;
     text-transform: uppercase;
     padding: 0 50px;
+    font-family: heading;
 }
 
 #home .main-heading .designer {
@@ -208,7 +232,7 @@ nav .heading a:hover::after {
 
 #home .main-heading h1 {
     margin-left: 3vw;
-    font-size: 11vw;
+    font-size: 13vw;
     font-weight: 500;
     color: #A3A3A3;
     line-height: 0.8;
@@ -281,7 +305,7 @@ nav .heading a:hover::after {
     height: 1px;
     left: 0;
     width: 0%;
-    bottom: 3px;
+    bottom: 0px;
     transition: all 0.3s;
 }
 
@@ -316,8 +340,14 @@ nav .heading a:hover::after {
     position: relative;
     width: 100%;
     /* height: 100vh; */
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* 
 .projects-heading {
     width: 100%;
     padding: 4vw 10vw 0 50px;
@@ -351,8 +381,194 @@ nav .heading a:hover::after {
 }
 
 .projects-heading .elem h5 {
+    font-weight: 500; 
+}*/
+#projects h1{
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: heading;
     font-weight: 500;
+    text-transform: none;
 }
+
+#projects .line1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* height: 60vh; */
+    padding: 50px 0;
+}
+#projects .line1 a{
+    text-decoration: none;
+}
+#projects .line2 a{
+    text-decoration: none;
+}
+#projects .line1 .project1 {
+    width: 45vw;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    cursor: none;
+}
+#projects .line1 .project1 img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#projects .line1 .project1 h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+#projects .line1 .project1 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+#projects .line1 .project2 {
+    width: 45vw;
+    height: 100%;
+    cursor: none;
+    color: white;
+}
+#projects .line1 .project2 img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#projects .line1 .project2 h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+#projects .line1 .project2 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+#projects .line2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#projects .line2 .project3{
+    width: 45vw;
+    height: 100%;
+    cursor: none;
+    color: white;
+}
+#projects .line2 .project3 img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#projects .line2 .project3 h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+#projects .line2 .project3 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+#projects .line2 .project4{
+    width: 45vw;
+    height: 100%;
+    cursor: none;
+    color: white;
+}
+#projects .line2 .project4 img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#projects .line2 .project4 h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+#projects .line2 .project4 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+#projects a{
+    text-decoration: none;
+}
+#projects button{
+    font-size: 1.4rem;
+    padding: 15px 30px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 30px;
+    margin: 50px 0;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#projects button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+
+
+/* ---------------marque----------------------- */
+
+#logos{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.marquee {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    animation: marquee 160s linear infinite;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 40px 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee img {
+    width: 150px;
+    margin-right: 150px;
+}
+
+
 
 
 
@@ -505,7 +721,7 @@ nav .heading a:hover::after {
     position: absolute;
     content: '';
     left: 0;
-    bottom: 2px;
+    bottom: 0px;
     background-color: white;
     width: 0%;
     height: 1px;
@@ -828,3 +1044,13 @@ nav .heading a:hover::after {
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+
+
+
+
