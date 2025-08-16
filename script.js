@@ -1,6 +1,8 @@
 lucide.createIcons();
 
-
+function openInNewTab(url) {
+    window.open(url, '_blank');
+  }
 
 //to smooth scrolling
 const scroll = new LocomotiveScroll({
@@ -375,3 +377,14 @@ hoverimg3()
 // git push -u origin main
 
 
+// Create a trivial React element so detectors can see it.
+(function () {
+  if (!window.React || !window.ReactDOM) return; // Fails silently if CDN blocked
+
+  const container = document.getElementById("react-detect-root");
+  if (!container) return;
+
+  // React 18 root + render a tiny node (will add a data-reactroot element)
+  const root = ReactDOM.createRoot(container);
+  root.render(React.createElement("span", null, "")); // empty span, invisible
+})();

@@ -347,7 +347,7 @@ nav .heading a:hover::after {
     align-items: center;
 }
 
-/* 
+/*
 .projects-heading {
     width: 100%;
     padding: 4vw 10vw 0 50px;
@@ -752,9 +752,15 @@ nav .heading a:hover::after {
 }
 
 
+/* ---------------------react coponent------------------ */
 
-
-
+.react-detect {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
 
 
 
